@@ -2,7 +2,7 @@
 	import Image from '$lib/components/ui/Image.svelte';
 	import Button from '$lib/components/ui//Button.svelte';
 
-	import deer from '$lib/assets/deer.png?enhanced';
+	import deer from '$lib/assets/deer.png';
 </script>
 
 <div class="grid-layout">

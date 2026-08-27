@@ -6,7 +6,7 @@
 	import Structure from '$lib/components/landing/Structure.svelte';
 	import CTA from '$lib/components/landing/CTA.svelte';
 
-	import campfire from '$lib/assets/computer_lady.webp?enhanced';
+	import campfire from '$lib/assets/computer_lady.webp';
 </script>
 
 <div class="grid-layout">

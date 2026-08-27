@@ -1,9 +1,9 @@
 <script lang="ts">
 	import Image from '$lib/components/ui/Image.svelte';
 
-	import data_platform from '$lib/assets/data_platform.png?enhanced';
-	import apps from '$lib/assets/apps.png?enhanced';
-	import group from '$lib/assets/group.png?enhanced';
+	import data_platform from '$lib/assets/data_platform.png';
+	import apps from '$lib/assets/apps.png';
+	import group from '$lib/assets/group.png';
 </script>
 
 <div class="grid-layout mt-8">

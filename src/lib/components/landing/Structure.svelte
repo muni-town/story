@@ -1,8 +1,8 @@
 <script lang="ts">
 	import Image from '$lib/components/ui/Image.svelte';
 
-	import thoughts from '$lib/assets/thoughts.png?enhanced';
-	import threads from '$lib/assets/threads.webp?enhanced';
+	import thoughts from '$lib/assets/thoughts.png';
+	import threads from '$lib/assets/threads.webp';
 </script>
 
 <div class="grid-layout mt-8">
