@@ -33,8 +33,6 @@
 			a: 'Yes! Join <a href="https://roomy.space/did:plc:4moccs43r5v2xzkynae3xk2u" target="_blank" rel="noopener noreferrer">Muni Town</a> or <a href="https://roomy.space/did:plc:gnwy2zbm3hu4gfdawzxmpb2s" target="_blank" rel="noopener noreferrer">Roomy Space</a> and chat to us about what you\'re interested in working on. If you\'re a dev, please chat to us in there before making any big PRs. You can find our code on <a href="https://github.com/muni-town/roomy" target="_blank" rel="noopener noreferrer">Github</a> or <a href="https://tangled.org/roomy.space/roomy" target="_blank" rel="noopener noreferrer">Tangled</a>.'
 		}
 	];
-
-	let open = $state<number | null>(0);
 </script>
 
 <section class="faq grid-layout" aria-labelledby="faq-heading">
@@ -43,22 +41,15 @@
 	<ul>
 		{#each faqs as item, i (item.q)}
 			<li>
-				<h3>
-					<button
-						type="button"
-						aria-expanded={open === i}
-						aria-controls="faq-panel-{i}"
-						onclick={() => (open = open === i ? null : i)}
-					>
+				<details open={i === 0}>
+					<summary>
 						{item.q}
-						<span class="indicator" aria-hidden="true">{open === i ? '–' : '+'}</span>
-					</button>
-				</h3>
-				{#if open === i}
-					<div class="panel" id="faq-panel-{i}">
+						<span class="indicator" aria-hidden="true"></span>
+					</summary>
+					<div class="panel">
 						<p>{@html item.a}</p>
 					</div>
-				{/if}
+				</details>
 			</li>
 		{/each}
 	</ul>
@@ -94,31 +85,36 @@
 		overflow: hidden;
 	}
 
-	h3 {
-		margin: 0;
+	details {
+		border-radius: inherit;
 	}
 
-	button {
-		width: 100%;
+	summary {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		gap: 1rem;
-		text-align: left;
-		background: none;
-		border: none;
 		padding: 1.25rem 1.5rem;
 		font-family: var(--font-serif);
 		font-size: var(--text-step-1);
 		font-weight: 500;
 		color: var(--brown);
 		cursor: pointer;
+		list-style: none;
 	}
 
-	.indicator {
+	summary::-webkit-details-marker {
+		display: none;
+	}
+
+	.indicator::before {
+		content: '+';
 		font-family: var(--font-sans);
 		font-weight: 400;
-		flex-shrink: 0;
+	}
+
+	details[open] .indicator::before {
+		content: '–';
 	}
 
 	.panel p {
