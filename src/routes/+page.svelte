@@ -1,23 +1,21 @@
 <script lang="ts">
-	import Image from '$lib/components/ui/Image.svelte';
-
-	import Atmosphere from '$lib/components/landing/Atmosphere.svelte';
-	import Intro from '$lib/components/landing/Intro.svelte';
-	import Structure from '$lib/components/landing/Structure.svelte';
-	import CTA from '$lib/components/landing/CTA.svelte';
-
-	import campfire from '$lib/assets/computer_lady.webp?enhanced';
+	import Hero from '$lib/components/landing/Hero.svelte';
+	import Features from '$lib/components/landing/Features.svelte';
+	import CTASection from '$lib/components/landing/CTASection.svelte';
+	import Pricing from '$lib/components/landing/Pricing.svelte';
+	import FAQ from '$lib/components/landing/FAQ.svelte';
 </script>
 
-<div class="grid-layout">
-	<Image
-		src={campfire}
-		class="crispy mt-4"
-		alt="a lady typing on computer"
+<svelte:head>
+	<title>Roomy — Your community needs its own space</title>
+	<meta
+		name="description"
+		content="Roomy is an open platform for cozy communities. No ads, no selling your data, no lock in."
 	/>
-</div>
+</svelte:head>
 
-<Intro />
-<Structure />
-<Atmosphere />
-<CTA/>
+<Hero />
+<Features />
+<CTASection />
+<Pricing />
+<FAQ />

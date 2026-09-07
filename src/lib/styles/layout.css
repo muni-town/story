@@ -56,6 +56,8 @@
 	--brown: #201c1b;
 	--pink: #ff0097;
 	--black: #1a1a1a;
+	--bg: #fff4e5;
+	--card: #ffe3bc;
 
 	--color-pink: var(--pink);
 
@@ -77,9 +79,9 @@
 @layer base {
 	body {
 		margin: 0;
-		background: var(--white);
+		background: var(--bg);
 		color: var(--brown);
-		font-family: var(--font-serif);
+		font-family: var(--font-sans);
 		font-size: var(--text-step-0);
 		font-variant-numeric: lining-nums;
 	}
@@ -91,6 +93,12 @@
 
 	a:hover {
 		text-decoration-line: none;
+	}
+
+	h1,
+	h2,
+	h3 {
+		font-family: var(--font-serif);
 	}
 
 	h2 {
@@ -118,6 +126,12 @@
 		max-width: 100%;
 		margin-bottom: 0.25rem;
 		border-radius: 4px;
+	}
+
+	img.alpha {
+		background-image: none;
+		border-radius: 0;
+		margin-bottom: 0;
 	}
 
 	figure {
