@@ -21,7 +21,7 @@
 					{ text: 'members area', bold: true },
 					{ text: ' with chat-based staff support' }
 				],
-				[{ text: 'Early access to new features' }]
+				[{ text: 'Help us survive as an open source community chat app!' }]
 			],
 			price: { old: '$60', current: '$30', per: '/month' }
 		},
@@ -50,10 +50,24 @@
 				<h3>{tier.name}</h3>
 				<ul>
 					{#each tier.features as feature (feature)}
-						<li>
+					<li>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2.5"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							aria-hidden="true"
+						>
+							<path d="M20 6 9 17l-5-5" />
+						</svg>
+						<span>
 							{#each feature as part (part.text)}<span class:bold={part.bold}>{part.text}</span
 								>{/each}
-						</li>
+						</span>
+					</li>
 					{/each}
 				</ul>
 				{#if tier.price}
@@ -150,6 +164,22 @@
 		text-align: center;
 		margin: 0 0 1.5rem;
 	}
+	li {
+		font-family: var(--font-sans);
+		font-size: var(--text-step-0);
+		line-height: 1.45;
+		display: flex;
+		align-items: flex-start;
+		gap: 0.5rem;
+	}
+
+	li svg {
+		flex-shrink: 0;
+		width: 1rem;
+		height: 1rem;
+		margin-top: 0.2em;
+		color: var(--pink);
+	}
 
 	ul {
 		list-style: none;
@@ -157,12 +187,6 @@
 		padding: 0;
 		display: grid;
 		gap: 1rem;
-	}
-
-	li {
-		font-family: var(--font-sans);
-		font-size: var(--text-step-0);
-		line-height: 1.45;
 	}
 
 	@media (width < 768px) {
