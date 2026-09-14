@@ -14,7 +14,7 @@
 		},
 		{
 			q: 'Where is my data stored?',
-			a: 'Right now, primarily on our server. We\'re in the process of moving to a fully <a href="https://atproto.com/" target="_blank" rel="noopener noreferrer">ATProto</a>-based system as permissioned data gets rolled out. What this will enable is every user having control over the hosting of their own messages and media, with admins having access to the full space archive. Users signing up with us have their data on our personal data server, but can move it elsewhere whenever they like.'
+			a: 'We\'re in the process of moving to a fully <a href="https://atproto.com/" target="_blank" rel="noopener noreferrer">ATProto</a>-based system as permissioned data gets rolled out. What this will enable is every user having control over the hosting of their own messages and media, with admins having access to the full space archive. Users signing up with us have their data on our personal data server, but can move it elsewhere whenever they like. Until then, space data is primarily on our server.'
 		},
 		{
 			q: 'Do I need a Bluesky account?',
@@ -26,7 +26,7 @@
 		},
 		{
 			q: 'Who makes Roomy?',
-			a: 'Three of us at the core — Erlend, Zicklag and Meri — as well as a crew of other casual and community contributors. We like to hang out in a space called <a href="https://roomy.space/did:plc:4moccs43r5v2xzkynae3xk2u" target="_blank" rel="noopener noreferrer">Muni Town</a>, which is a community of people who care about making the web better and more empowering for humans.'
+			a: 'Three of us at the core — <a href="https://sifa.id/p/erlend.sh" target="_blank" rel="noopener noreferrer">Erlend</a>, <a href="https://zicklag.dev/" target="_blank" rel="noopener noreferrer">Zicklag</a> and <a href="https://meri.garden/" target="_blank" rel="noopener noreferrer">Meri</a> — as well as a crew of other casual and community contributors. We run a space called <a href="https://roomy.space/did:plc:4moccs43r5v2xzkynae3xk2u" target="_blank" rel="noopener noreferrer">Muni Town</a>, which is a community of people who care about making the web better and more empowering for humans. We also publish writing about our work on <a href="https://blog.muni.town/" target="_blank" rel="noopener noreferrer">our blog</a>.'
 		},
 		{
 			q: 'Can I contribute?',
