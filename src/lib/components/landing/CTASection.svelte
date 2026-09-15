@@ -5,7 +5,7 @@
 <div class="grid-layout cta">
 	<p>If you’re on Bluesky or the Atmosphere, you already have an account</p>
 	<Button href="https://roomy.space" class="w-full max-w-80 mx-auto py-3 no-underline"
-		>Launch Roomy</Button
+		>Open Roomy</Button
 	>
 </div>
 

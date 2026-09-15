@@ -2,13 +2,18 @@
 	import jdThoughts from '$lib/assets/jd-thoughts.png?enhanced';
 	import jdDeer from '$lib/assets/jd-deer.png?enhanced';
 	import jdGroup from '$lib/assets/jd-group.png?enhanced';
+	import Button from '$lib/components/ui/Button.svelte';
 </script>
 
 <div class="tagline">
 	<h2>Roomy is an open platform for cozy communities</h2>
 	<p>No ads, no selling your data, no lock in.</p>
 	<p>A step towards resilience.</p>
+<Button href="https://roomy.space" class="w-full max-w-80 mx-auto py-3 no-underline mt-8"
+		>Open Roomy</Button
+	>
 </div>
+
 
 <section class="feature grid-layout">
 	<div class="copy">
@@ -59,6 +64,7 @@
 	.tagline h2 {
 		font-size: var(--text-step-5);
 		margin-inline: auto;
+		line-height: 110%;
 	}
 
 	.tagline p {
